@@ -1,0 +1,10 @@
+[
+  {
+    "path": "/device",
+    "module": "../modules/device/deviceRoutes"
+  },
+  {
+    "path": "/device",
+    "module": "../modules/device/deviceRoutes"
+  }
+]

@@ -1,0 +1,388 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+#root {
+  width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: #009999;
+  cursor: pointer;
+
+}
+
+.pct-breadcrum {
+  margin-bottom: 0 !important;
+}
+
+.breadcrum {
+  margin-bottom: 0 !important;
+}
+
+/*Custom Scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(212, 211, 211);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #009999;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+/*
+.btn-primary{
+	background-color: #009999;
+	border: 1px solid #009999;
+ }
+
+.btn-primary:hover{
+	background-color: aquamarine;
+	border: 1px solid #009999;
+}
+
+.btn-primary:active{
+	border: 1px solid #009999;
+}
+
+.btn-primary:visited{
+	background-color: #009999;
+	border: 1px solid #009999;
+} */
+
+.btn {
+  margin: 0 5px;
+}
+
+.btn-primary {
+  background-color: #009999 !important;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #009999c4 !important;
+}
+
+.btn-secondary {
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #009999c4 !important;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  box-shadow: 0px 0px 0px 4px #2f94945e;
+}
+
+/* .btn-light {
+  
+  } */
+
+.btn-danger:focus,
+.btn-danger:active:focus,
+.btn-danger.active:focus {
+  box-shadow: 0px 0px 0px 4px #9600002f !important;
+}
+
+.btn-external-link {
+  color: #009999;
+  margin-left: 2rem;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.btn-external-link:hover {
+  color: #009999c4 !important;
+}
+
+.form-control:focus,
+.form-control:active:focus,
+.form-control.active:focus {
+  box-shadow: 0px 0px 0px 4px #2f94945e;
+}
+
+.record-view-list {
+  border: none;
+  box-shadow: none;
+  pointer-events: none;
+  background-color: transparent;
+}
+
+.record-view-label {
+  font-weight: 600;
+}
+
+.record-view-list:focus,
+.record-view-list:active:focus,
+.record-view-list.active:focus {
+  box-shadow: none !important;
+}
+
+.form-select:focus,
+.form-select:active:focus,
+.form-select.active:focus {
+  box-shadow: 0px 0px 0px 4px #2f94945e;
+}
+
+a {
+  color: inherit;
+}
+
+.breadcrumb-item {
+  color: #000 !important;
+}
+
+.breadcrum-label {
+  color: #000;
+  font-weight: 600;
+}
+
+.breadcrum-label-active {
+  color: #000;
+  font-weight: 600;
+}
+
+.breadcrum-label:hover {
+  color: #009999;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+.openning-cash-control__amount--input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  transition: 0.3s all ease-in-out;
+}
+
+.openning-cash-control__amount--input:focus {
+  border-bottom: 2px solid #009999;
+}
+
+.ag-theme-alpine .ag-row-hover {
+  background-color: #2f949423;
+}
+
+/* .typeahead-field input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: searchfield-cancel-button;
+}*/
+
+
+select[multiple] option:checked,
+option:selected {
+  background-color: #009999;
+  /* Bootstrap primary color, or choose your own */
+  color: white;
+  /* White text for contrast */
+}
+
+/* Custom styles for checked (selected) options in a select dropdown */
+select[multiple] option:checked {
+  background-color: #009999;
+  /* Bootstrap primary color, or choose your own */
+  color: white;
+  /* White text for contrast */
+}
+
+/* Additional styles to ensure accessibility and visual coherence */
+/* select[multiple] option:checked {
+  box-shadow: inset 0 -1px 0 #dc3545;
+} */
+
+/* Optional: style for hovering over options */
+select[multiple] option:hover {
+  background-color: #009999;
+  /* A slightly darker blue on hover */
+  color: white;
+}
+
+
+.form-check-input:checked {
+  background-color: #009999;
+  border-color: #009999;
+}
+
+.form-check-input:focus {
+  border-color: #009999;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
+}
+
+
+
+
+/* Media query for screens 576px and larger: hide the button */
+@media (max-width: 576px) {
+  .f-ldr-col {
+    padding: 0;
+  }
+
+  .f-text {
+    font-size: 11px;
+  }
+
+  .f-btn-100 {
+    width: 100%;
+  }
+
+  .f-ldr {
+    margin-top: 4px;
+  }
+
+  .f-btn-hide-m {
+    display: none;
+  }
+
+  .f-grid-row {
+    cursor: pointer;
+
+  }
+}
+
+
+/* Base styles for the input field */
+input.f-iv {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  cursor: text;
+}
+
+/* Styles for the read-only plaintext appearance */
+input.f-iv[readonly] {
+  border: none;
+  background-color: transparent;
+  color: #000;
+  cursor: default;
+  padding-left: 0;
+  padding-right: 0;
+  box-shadow: none;
+  outline: none;
+}
+
+/* Optional: Adjusting the font style for readability */
+input.f-iv[readonly]::placeholder {
+  color: #6c757d;
+  /* Match placeholder color to text color */
+}
+
+.f-fw-bold {
+  font-weight: 500;
+}
+
+.f-modal-90w {
+  width: 100% !important;
+}
+
+.f-icon-picker:hover {
+  background-color: #ccc;
+}
+
+.icon-container {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  width: 36px;
+  /* Adjust size as needed */
+  height: 36px;
+  /* Adjust size as needed */
+  cursor: pointer;
+}
+
+.icon {
+
+  position: absolute;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.app-icon {
+  height: 24px;
+  width: 24px;
+  opacity: 1;
+}
+
+.arrow-icon {
+  height: 24px;
+  width: 24px;
+  opacity: 0;
+}
+
+.icon-container:hover .app-icon {
+
+  opacity: 0;
+}
+
+.icon-container:hover .arrow-icon {
+  opacity: 1;
+}
